@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "status": "malfunction",
+    "status": "fixing",
     "assignedWorker": null,
     "issueHistory": []
   },
