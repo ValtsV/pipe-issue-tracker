@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "status": "working",
+    "assignedWorker": null,
+    "issueHistory": []
+  },
+  {
+    "id": 2,
+    "status": "working",
+    "assignedWorker": null,
+    "issueHistory": []
+  },
+  {
+    "id": 3,
+    "status": "broken",
+    "assignedWorker": null,
+    "issueHistory": []
+  },
+  {
+    "id": 4,
+    "status": "working",
+    "assignedWorker": null,
+    "issueHistory": []
+  },
+  {
+    "id": 5,
+    "status": "malfunction",
+    "assignedWorker": null,
+    "issueHistory": []
+  },
+  {
+    "id": 6,
+    "status": "working",
+    "assignedWorker": null,
+    "issueHistory": []
+  }
+]
