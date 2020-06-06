@@ -15,7 +15,7 @@
     "id": 3,
     "status": "broken",
     "assignedWorker": null,
-    "issueHistory": []
+    "issueHistory": ["Some Problem", "Earlier Problem"]
   },
   {
     "id": 4,
@@ -27,7 +27,7 @@
     "id": 5,
     "status": "fixing",
     "assignedWorker": null,
-    "issueHistory": []
+    "issueHistory": ["First Problem"]
   },
   {
     "id": 6,

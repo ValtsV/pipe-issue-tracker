@@ -5,7 +5,9 @@ fetch("pipes.json")
   .then((data) => {
     let output = "";
     data.map((pipe) => {
-      let status = "";
+      let status = "",
+        issueText = "";
+
       switch (pipe.status) {
         case "working":
           status = "success";
@@ -17,9 +19,14 @@ fetch("pipes.json")
           status = "danger";
           break;
       }
-      output += `
 
-              <button type="button" class="btn btn-${status} ">Pipe ID: ${pipe.id} Status: ${pipe.status}</button>
+      if (status === "warning" || status === "danger") {
+        issueText = `Issue: ${pipe.issueHistory[0]}`;
+      }
+      output += `
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+      Pipe ID: ${pipe.id} ${issueText}
+      <span class="badge badge-primary bg-${status}">${pipe.status}</span></li>
             `;
     });
     pipeList.innerHTML = output;
