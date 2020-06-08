@@ -11,22 +11,26 @@
     <div class="container">
       <form>
         <div class="form-group">
-          <h2>Add new issue</h2>
-          <label for="issue">Issue:</label>
+          <h2>Add / Remove Issue</h2>
+          <label for="pipeSelect" class="m-1">Select a pipe:</label>
+          <select class="form-control" id="pipeSelect">
+            
+          </select>
+          <label for="issue" class="m-1">Issue:</label>
           <input
             type="text"
             class="form-control"
             id="issueInput"
             placeholder="Describe the issue..."
           />
-          <label for="issue">Status:</label>
+          <label for="issue" class="m-1">Status:</label>
           <select class="form-control">
             <option value="" disabled selected hidden>Choose a category</option>
             <option value="working">Working</option>
             <option value="malfunction">Malfunction</option>
             <option value="broken">Broken</option>
           </select>
-          <label for="assign">Assign worker:</label>
+          <label for="assign" class="m-1">Assign worker:</label>
           <input
             type="text"
             class="form-control"
