@@ -21,12 +21,12 @@ fetch("pipes.json")
       }
 
       if (status === "warning" || status === "danger") {
-        issueText = `Issue: ${pipe.issueHistory[0]}`;
+        issueText = `<b>Issue:</b> ${pipe.issueHistory[0]}`;
       }
       output += `
       <li class="list-group-item d-flex justify-content-between align-items-center">
-      Pipe ID: ${pipe.id} ${issueText}
-      <span class="badge badge-primary bg-${status}">${pipe.status}</span></li>
+      <div>ID: <b>${pipe.id}</b>   <span class="marg-l">${issueText}</span></div>
+      <span class="badge badge-primary bg-${status} marg-l">${pipe.status}</span></li>
             `;
     });
     pipeList.innerHTML = output;

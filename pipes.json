@@ -15,7 +15,10 @@
     "id": 3,
     "status": "broken",
     "assignedWorker": null,
-    "issueHistory": ["Some Problem", "Earlier Problem"]
+    "issueHistory": [
+      "Some Problem Some ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome Problem",
+      "Earlier Problem"
+    ]
   },
   {
     "id": 4,
