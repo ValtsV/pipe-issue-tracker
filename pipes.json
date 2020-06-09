@@ -4,40 +4,65 @@
       "id": 1,
       "status": "working",
       "assignedWorker": null,
-      "issueHistory": []
+      "issue": null
     },
     {
       "id": 2,
       "status": "working",
       "assignedWorker": null,
-      "issueHistory": []
+      "issue": null
     },
     {
       "id": 3,
       "status": "broken",
       "assignedWorker": null,
-      "issueHistory": [
-        "Some Problem Some ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome Problem",
-        "Earlier Problem"
-      ]
+      "issue": "Some Problem Some ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome Problem"
     },
     {
       "id": 4,
       "status": "working",
       "assignedWorker": null,
-      "issueHistory": []
+      "issue": null
     },
     {
       "id": 5,
       "status": "fixing",
       "assignedWorker": null,
-      "issueHistory": ["First Problem"]
+      "issue": "First problem"
     },
     {
       "id": 6,
       "status": "working",
       "assignedWorker": null,
-      "issueHistory": []
+      "issue": "smth"
+    }
+  ],
+  "issueHistory": [
+    {
+      "id": 1,
+      "history": []
+    },
+    {
+      "id": 2,
+      "history": []
+    },
+    {
+      "id": 3,
+      "history": [
+        "Earlier Problem"
+      ]
+    },
+    {
+      "id": 4,
+      "history": []
+    },
+    {
+      "id": 5,
+      "history": []
+    },
+    {
+      "id": 6,
+      "history": []
     }
   ]
 }

@@ -25,7 +25,7 @@ fetch("pipes.json")
       }
 
       if (status === "warning" || status === "danger") {
-        issueText = `<b>Issue:</b> ${pipe.issueHistory[0]}`;
+        issueText = `<b>Issue:</b> ${pipe.issue}`;
       }
       listOutput += `
       <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -43,16 +43,50 @@ fetch("pipes.json")
 
 // update JSON
 
-const statusInput = document.getElementById("statusInput");
+const statusSelect = document.getElementById("statusSelect");
 const issueInput = document.getElementById("issueInput");
-const assignInput = document.getElementById("assignInput");
+const workerInput = document.getElementById("workerInput");
+const submitIssue = document.getElementById("submitIssue");
 
-const data = {
-  id: 6,
-  status: "fixing",
-  assignedWorker: null,
-  issueHistory: ["First Problem"],
-};
+submitIssue.addEventListener("click", () => {
+  let data = {
+    status: statusSelect.value,
+    assignedWorker: workerInput.value,
+    issue: issueInput.value,
+  };
+  if (statusSelect.value !== "working") {
+    data = {
+      status: statusSelect.value,
+      assignedWorker: workerInput.value,
+      issue: issueInput.value,
+    };
+  } else {
+    data = {
+      status: "working",
+      assignedWorker: null,
+      issue: null,
+    };
+  }
+
+  fetch(`http://localhost:3000/pipes/${parseInt(pipeSelect.value)}`, {
+    method: "PATCH",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json/",
+    },
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      setTimeout(() => console.log("Success", data), 10000);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+  console.log(JSON.stringify(data));
+});
+
+// console.log(statusInput);
 
 // fetch("pipes.json/", {
 //   method: "PUT",
