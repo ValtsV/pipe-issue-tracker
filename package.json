@@ -1,0 +1,22 @@
+{
+  "name": "pipe-issue-tracker",
+  "version": "1.0.0",
+  "description": "pipe issue tracker with fake rest api",
+  "main": "app.js",
+  "scripts": {
+    "json:server": "json-server --watch pipes.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValtsV/pipe-issue-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValtsV/pipe-issue-tracker/issues"
+  },
+  "homepage": "https://github.com/ValtsV/pipe-issue-tracker#readme",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}

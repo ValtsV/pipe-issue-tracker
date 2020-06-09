@@ -1,41 +1,43 @@
-[
-  {
-    "id": 1,
-    "status": "working",
-    "assignedWorker": null,
-    "issueHistory": []
-  },
-  {
-    "id": 2,
-    "status": "working",
-    "assignedWorker": null,
-    "issueHistory": []
-  },
-  {
-    "id": 3,
-    "status": "broken",
-    "assignedWorker": null,
-    "issueHistory": [
-      "Some Problem Some ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome Problem",
-      "Earlier Problem"
-    ]
-  },
-  {
-    "id": 4,
-    "status": "working",
-    "assignedWorker": null,
-    "issueHistory": []
-  },
-  {
-    "id": 5,
-    "status": "fixing",
-    "assignedWorker": null,
-    "issueHistory": ["First Problem"]
-  },
-  {
-    "id": 6,
-    "status": "working",
-    "assignedWorker": null,
-    "issueHistory": []
-  }
-]
+{
+  "pipes": [
+    {
+      "id": 1,
+      "status": "working",
+      "assignedWorker": null,
+      "issueHistory": []
+    },
+    {
+      "id": 2,
+      "status": "working",
+      "assignedWorker": null,
+      "issueHistory": []
+    },
+    {
+      "id": 3,
+      "status": "broken",
+      "assignedWorker": null,
+      "issueHistory": [
+        "Some Problem Some ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome ProblemSome Problem",
+        "Earlier Problem"
+      ]
+    },
+    {
+      "id": 4,
+      "status": "working",
+      "assignedWorker": null,
+      "issueHistory": []
+    },
+    {
+      "id": 5,
+      "status": "fixing",
+      "assignedWorker": null,
+      "issueHistory": ["First Problem"]
+    },
+    {
+      "id": 6,
+      "status": "working",
+      "assignedWorker": null,
+      "issueHistory": []
+    }
+  ]
+}

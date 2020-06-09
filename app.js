@@ -1,12 +1,14 @@
+// get output elems
 const pipeList = document.getElementById("pipeList");
 const pipeSelect = document.getElementById("pipeSelect");
 
+// get json / output
 fetch("pipes.json")
   .then((res) => res.json())
   .then((data) => {
     let listOutput = "";
     let selectOutput = `<option value="" disabled selected hidden>Pipe ID</option>`;
-    data.map((pipe) => {
+    data.pipes.map((pipe) => {
       let status = "",
         issueText = "";
 
@@ -37,5 +39,29 @@ fetch("pipes.json")
     });
     pipeList.innerHTML = listOutput;
     pipeSelect.innerHTML = selectOutput;
-    console.log(selectOutput);
   });
+
+// update JSON
+
+const statusInput = document.getElementById("statusInput");
+const issueInput = document.getElementById("issueInput");
+const assignInput = document.getElementById("assignInput");
+
+const data = {
+  id: 6,
+  status: "fixing",
+  assignedWorker: null,
+  issueHistory: ["First Problem"],
+};
+
+// fetch("pipes.json/", {
+//   method: "PUT",
+//   headers: {
+//     "Content-Type": "application/json/",
+//   },
+//   body: JSON.stringify(data),
+// })
+//   .then((res) => res.json())
+//   .then((data) => {
+//     console.log(data);
+//   });

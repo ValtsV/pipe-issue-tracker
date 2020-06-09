@@ -24,7 +24,7 @@
             placeholder="Describe the issue..."
           />
           <label for="issue" class="m-1">Status:</label>
-          <select class="form-control">
+          <select class="form-control" id="statusInput">
             <option value="" disabled selected hidden>Choose a category</option>
             <option value="working">Working</option>
             <option value="malfunction">Malfunction</option>
@@ -34,9 +34,10 @@
           <input
             type="text"
             class="form-control"
-            id="assign"
+            id="assignInput"
             placeholder="Assign worker..."
           />
+          <button type="submit" class="btn btn-primary m-1">Submit</button>
         </div>
       </form>
       <ul class="list-group" id="pipeList">
